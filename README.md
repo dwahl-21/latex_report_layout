@@ -3,6 +3,8 @@
 This is a layout for a university report containing the basic building blocks I usually use in LaTeX documents.
 If you want to use this layout, there are some files you have to change.
 
+The layout is currently in German and i don't itend to change it for now. Maybe I will change it later if anyone other than me wants to use it.
+
 ## Files to modify
 
 1. `uni_vars.tex`: Here are some variables defined which are used in the document as placeholders (title, author, date, etc.)
