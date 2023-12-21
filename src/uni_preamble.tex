@@ -1,11 +1,13 @@
-\documentclass[12pt, paper=a4, twoside=true,
+\documentclass[12pt, paper=a4, twoside,
 parskip=half+, pagesize=auto, numbers=noenddot, plainheadsepline,
 open=right, toc=listof, toc=bibliography]{extarticle}
 
 \usepackage{import}
-%\usepackage[automark]{scrlayer-fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgschola}
 
 \usepackage[textwidth=19cm,textheight=26cm,top=1.5cm,bottom=1.5cm,left=3cm,right=3cm,includeheadfoot]{geometry}
 
@@ -36,7 +38,6 @@ hypertexnames = false,
 citecolor = black]{hyperref}
 
 \usepackage{amsfonts}
-%\usepackage[OT2]{fontenc}
 \usepackage{setspace}
 \onehalfspacing
 
@@ -91,14 +92,5 @@ citecolor = black]{hyperref}
 
 \setlength{\headheight}{30.0pt}
 
-%\renewcommand{\sectionmark}[1]{\markboth{\thesection~ ~#1}{}}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection~ ~#1}{}}
 
-%\setkomafont{chapter}{\Large\rmfamily} % Ueberschrift der Ebene
-%\setkomafont{section}{\large\rmfamily}
-%\setkomafont{subsection}{\large\rmfamily}
-%\setkomafont{subsubsection}{\large\rmfamily}
-%\setkomafont{chapterentry}{\large\rmfamily} % Ueberschrift der Ebene in
-% Inhaltsverzeichnis
-%\setkomafont{descriptionlabel}{\bfseries\rmfamily} % fuer description Umgebungen
-%\setkomafont{captionlabel}{\small\bfseries}
-%\setkomafont{caption}{\small}
