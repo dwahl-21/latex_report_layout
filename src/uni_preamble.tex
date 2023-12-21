@@ -1,0 +1,104 @@
+\documentclass[12pt, paper=a4, twoside=true,
+parskip=half+, pagesize=auto, numbers=noenddot, plainheadsepline,
+open=right, toc=listof, toc=bibliography]{extarticle}
+
+\usepackage{import}
+%\usepackage[automark]{scrlayer-fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage[textwidth=19cm,textheight=26cm,top=1.5cm,bottom=1.5cm,left=3cm,right=3cm,includeheadfoot]{geometry}
+
+\usepackage{float}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\usepackage{pgf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage{fancyhdr}
+
+\usepackage{lastpage}
+
+
+\usepackage[hyphens]{url}
+\usepackage[colorlinks,
+urlcolor = black,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black]{hyperref}
+
+\usepackage{amsfonts}
+%\usepackage[OT2]{fontenc}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{graphicx}
+\usepackage[format=plain]{caption}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage[final]{microtype}
+
+\usepackage{pdfpages}
+
+\usepackage{lipsum}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{siunitx}
+\sisetup{per-mode=fraction}
+
+\usepackage[printonlyused]{acronym}
+
+\usepackage{color, colortbl}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+\usepackage{listings}
+
+\usepackage{tabularx}
+
+\usepackage[symbol]{footmisc}
+\renewcommand*{\thefootnote}{\arabic{footnote}}
+
+% Datei mit nutzerdefinierten Variablen (Titel, Name, ...)
+\input{./src/uni_vars.tex}
+
+\title{\thetitle}
+\author{\theauthor}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\newcommand\blankpage{
+  \clearpage
+  \begingroup
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \hypersetup{pageanchor=false}
+    \clearpage
+  \endgroup
+}
+
+\setlength{\headheight}{30.0pt}
+
+%\renewcommand{\sectionmark}[1]{\markboth{\thesection~ ~#1}{}}
+
+%\setkomafont{chapter}{\Large\rmfamily} % Ueberschrift der Ebene
+%\setkomafont{section}{\large\rmfamily}
+%\setkomafont{subsection}{\large\rmfamily}
+%\setkomafont{subsubsection}{\large\rmfamily}
+%\setkomafont{chapterentry}{\large\rmfamily} % Ueberschrift der Ebene in
+% Inhaltsverzeichnis
+%\setkomafont{descriptionlabel}{\bfseries\rmfamily} % fuer description Umgebungen
+%\setkomafont{captionlabel}{\small\bfseries}
+%\setkomafont{caption}{\small}
